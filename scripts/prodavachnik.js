@@ -5,6 +5,12 @@ function startApp() {
     $("#linkHome").click(showHomeView);
     $("#linkLogin").click(showLoginView);
     $("#linkRegister").click(showRegisterView);
+    $("#linkListAds").click(listAdverts);
+
+    const kinveyBaseUrl = "https://mock.api.com/";
+    const kinveyAppKey = "kid_rk";
+    const kinveyAppSecret = "736804a668";
+
 
     function showView(viewName) {
         // Hide all views and show the selected view only
